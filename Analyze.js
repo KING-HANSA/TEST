@@ -14,4 +14,4 @@ function checkOwner(senderNumber) {
 }
 
 // Example call
-checkOwner('94773010580'); // Replace with the actual sender number to check
+checkOwner('94776804489'); // Replace with the actual sender number to check
