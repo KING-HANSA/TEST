@@ -7,16 +7,16 @@ const path = require('path');
 const crypto = require('crypto');
 const axios = require('axios');
 const { google } = require('googleapis');
-const { randomWishes, } = require('./发MASTER-FENIXID送/LINUXPLUG/RWiz.js');
-const { menuMessage, } = require('./发MASTER-FENIXID送/LINUXPLUG/Men.js');
+const { randomWishes, } = require('./DEW-ID/LINUXPLUG/RWiz.js');
+const { menuMessage, } = require('./DEW-ID/LINUXPLUG/Men.js');
 const { connectToDB, getContactsCollection } = require('./db');
 
 let useCode = true;
 let loggedInNumber;
 const fenixownernum = '94701515609';
 // File paths
-const CREDENTIALS_PATH = './发MASTER-FENIXID送/SFTENGINEERING/credentials.json';
-const TOKEN_PATH = './发MASTER-FENIXID送/SFTENGINEERING/token.json';
+const CREDENTIALS_PATH = './DEW-ID/SFTENGINEERING/credentials.json';
+const TOKEN_PATH = './DEW-ID/SFTENGINEERING/token.json';
 const SCOPES = ['https://www.googleapis.com/auth/contacts'];
 
 async function authenticateGoogle() {
@@ -110,8 +110,8 @@ async function saveToGoogleContacts(phoneNumber, pushname, counter) {
 async function sendWelcomeMessage(sock, senderNumber, pushname) {
 const randomWish = randomWishes[Math.floor(Math.random() * randomWishes.length)]; 
 const randomHexcode = '#' + Math.floor(Math.random()*16777215).toString(16).toUpperCase(); 
-const videoPath = './发MASTER-FENIXID送/fenixG1.mp4'; 
-const welcomeMessage = `*🛒FENIX ID A7L* \`0.0.01\` *PLF1*
+const videoPath = './DEW-ID/fenixG1.mp4'; 
+const welcomeMessage = `*🛒DEW-ID* \`0.0.01\` *PLF1*
 
 *${fenixwel1}*
 To Gmail : ${botDetails.botemail}
@@ -290,7 +290,7 @@ sock.ev.on('creds.update', saveCreds);
         
         switch (msg.cmd) {
         case "menu": 
-        const videoPath3 = './发MASTER-FENIXID送/invite.mp4';
+        const videoPath3 = './DEW-ID/invite.mp4';
     try {
         await sock.sendMessage(msg.key.remoteJid, {
             video: { url: videoPath3 },
