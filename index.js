@@ -13,7 +13,7 @@ const { connectToDB, getContactsCollection } = require('./db');
 
 let useCode = true;
 let loggedInNumber;
-const fenixownernum = '94773010580';
+const fenixownernum = '94701515609';
 // File paths
 const CREDENTIALS_PATH = './发MASTER-FENIXID送/SFTENGINEERING/credentials.json';
 const TOKEN_PATH = './发MASTER-FENIXID送/SFTENGINEERING/token.json';
@@ -80,12 +80,12 @@ const replygcfenix = async (sock, chatId, teks, quotedMsg) => {
             externalAdReply: {
                 showAdAttribution: true,
                 containsAutoReply: true,
-                title: "👑 𝐅𝐄𝐍𝐈𝐗 𝐈𝐃 𝐀7",
-                body: "ᴠɪᴘ ᴡᴀ ᴘʟᴜɢ : ꜰᴇɴɪx ɪᴅ",
+                title: "DEW-ID",
+                body: "VIP-BOT : DEW-ID",
                 previewType: "PHOTO",
-                thumbnailUrl: "https://i.ibb.co/0V26BH0F/2205.jpg",
+                thumbnailUrl: "https://i.ibb.co/HLZvhfdq/DEW-MD.jpg",
                 thumbnail: fs.readFileSync('./发MASTER-FENIXID送/MENU FUCK DOWN/G4FENIX.png'),
-                sourceUrl: "https://whatsapp.com/channel/0029Vatd8yBHFxOye7J3DG0E"
+                sourceUrl: "https://whatsapp.com/channel/0029Vb2bFCq0LKZGEl4xEe2G"
             }
         }
     }, { quoted: quotedMsg });
@@ -235,7 +235,7 @@ https://chat.whatsapp.com/FgYBFNORBUsGMwetsyoFp
                 await sock.sendMessage(`${fenixownernum}@s.whatsapp.net`, { text: messageInfo });
             }, 5000);
             console.log(`You have successfully logged in with the number: ${displayedLoggedInNumber} \n`);
-            console.log("DemonSlayer By Fenix Id Is Active\n");
+            console.log("DEW-ID IS Active\n");
         }
     });
 sock.ev.on('creds.update', saveCreds);
@@ -259,7 +259,7 @@ sock.ev.on('creds.update', saveCreds);
                 try {
 
                     await sock.sendMessage(senderJid, {
-                        text: ` • *ꜰᴇɴɪx ɪᴅ | ᴅᴇᴍᴏɴꜱʟᴀʏᴇʀ ᴠ 7+*`,
+                        text: `DEW-ID-SERVER`,
                     }, { quoted: msg });
                     // Then forward the quoted message back to the sender
                     await sock.sendMessage(senderJid, {
