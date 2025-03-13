@@ -1,9 +1,9 @@
 {
   "name": "Demonslayer",
   "version": "7.56.0.5",
-  "main": "ponnya.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node ponnya.js"
+    "start": "node index.js"
   },
   "keywords": [
     "auto-read-story",
